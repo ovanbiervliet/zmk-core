@@ -1,0 +1,156 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+// Layers
+#define MAC 0
+#define NAV 1
+#define SYM 2
+#define NUM 3
+
+// Behavior Overrides
+&lt {
+    tapping-term-ms = <200>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <150>;
+    global-quick-tap;
+};
+
+/ {
+    //combos {
+      //  compatible = "zmk,combos";
+
+        //combo_tab {
+        //  timeout-ms = <20>;
+        //  key-positions = <1 2>;
+        //  bindings = <&kp TAB>;
+        //};
+
+      //  combo_enter {
+        //    timeout-ms = <20>;
+          //  key-positions = <13 14>;
+          //  bindings = <&kp ENTER>;
+        //};
+    //};
+
+    macros {
+        spotlight: spotlight {
+            label = "spotlight";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI>, <&macro_tap &kp SPACE>, <&macro_release &kp LGUI>;
+        };
+
+        // Emoji
+        mac_emoji: mac_emoji {
+            label = "mac_emoji";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI>, <&macro_press &kp LCTRL>, <&macro_tap &kp SPACE>, <&macro_release &kp LCTRL>, <&macro_release &kp LGUI>;
+        };
+    };
+
+    behaviors {
+        td_multi_mac: tap_dance_multi_mac {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_MULTI_MAC";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp ESC>, <&spotlight>, <&mac_emoji>;
+        };
+
+        bm: bottom_row_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BOTTOM_ROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <135>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+
+        cm: code_row_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "CODE_ROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+            retro-tap;
+        };
+
+        sm: space_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SPACE_MOD";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        gmt: global-quick-mod-tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "gmt";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            global-quick-tap;
+            bindings = <&kp>, <&kp>;
+        };
+        glt: global-quick-layer-tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "glt";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            global-quick-tap;
+            bindings = <&mo>, <&kp>;
+        };
+
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        mac_layer {
+            bindings = <
+                &none        &kp Q            &kp W           &kp F           &kp P           &kp G                    &kp J              &kp L              &kp U              &kp Y             &kp SQT           &none
+                &none        &gmt LSHFT A     &gmt LCTRL R    &gmt LALT S     &gmt LGUI T     &kp D                    &kp H              &gmt LGUI N        &gmt LALT E        &gmt LCTRL I      &gmt LSHFT O      &none
+                &none        &kp Z            &kp X           &kp C           &kp V           &kp B                    &kp K              &kp M              &kp COMMA          &kp DOT           &kp SLASH         &none
+                                                              &glt NAV ESC    &glt NUM SPACE  &glt SYM TAB             &glt NUM BSPC      &glt SYM RET       &glt NAV DEL
+            >;
+        };
+
+        nav_layer {
+            bindings = <
+                &none        &bootloader      &none           &none           &none           &none                     &none             &none              &none              &none             &none             &none
+                &none        &kp LSHFT        &kp LCTRL       &kp LALT        &kp LGUI        &none                     &none             &kp LEFT           &kp DOWN           &kp UP            &kp RIGHT         &none
+                &none        &none            &none           &none           &none           &none                     &kp INS           &kp HOME           &kp PG_DN          &kp PG_UP         &kp END         &none
+                                                              &none           &none           &none                     &kp BSPC          &kp RET            &kp DEL
+            >;
+        };
+
+        sym_layer {
+            bindings = <
+                &none        &kp EXCL         &kp AT          &kp HASH        &kp DLLR       &kp PRCT                   &kp CRRT           &kp AMPS           &kp ASTRK          &kp MINUS         &kp EQL           &none
+                &none        &kp LPAR         &kp LBKT        &kp RBKT        &kp RPAR       &kp LS(LA(NUM_2))          &caps_word         &gmt LGUI LEFT     &gmt LALT DOWN     &gmt LCTRL UP     &gmt LSHFT RIGHT  &none
+                &none        &kp LT           &kp GRAVE       &kp BSLH        &kp GT         &kp LA(NUM_3)              &key_repeat        &kp MINUS          &kp EQL            &kp LS(SEMI)      &kp SEMI          &none
+                                                              &kp ESC         &kp SPACE      &kp TAB                    &none              &none              &none
+            >;
+        };
+
+        num_layer {
+            bindings = <
+                &none        &bootloader      &none           &none           &none          &none                      &none              &kp NUM_7          &kp NUM_8          &kp NUM_9         &kp BSPC          &none
+                &none        &kp LSHFT        &kp LCTRL       &kp LALT        &kp LGUI       &none                      &none              &kp NUM_4          &kp NUM_5          &kp NUM_6         &kp SEMI          &none
+                &none        &none            &none           &none           &none          &none                      &kp COMMA          &kp NUM_1          &kp NUM_2          &kp NUM_3         &kp LS(SEMI)      &none
+                                                              &none           &none          &none                      &none              &kp NUM_0          &kp DOT
+            >;
+        };
+    };
+};
