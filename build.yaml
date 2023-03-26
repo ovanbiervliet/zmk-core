@@ -12,8 +12,13 @@
 #     shield: reviung41
 #
 ---
-board: '["nice_nano_v2"]'
-shield: '["splitkb_aurora_corne_left","splitkb_aurora_corne_right"]'
-kconfig: '["CONFIG_ZMK_MOUSE=y", "CONFIG_ZMK_SLEEP=y", "CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=3600000", "CONFIG_BT_CTLR_TX_PWR_PLUS_8=y", "CONFIG_ZMK_KEYBOARD_NAME=\"Corne Nano\""]'
-branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
+#board: '["nice_nano_v2"]'
+#shield: '["splitkb_aurora_corne_left","splitkb_aurora_corne_right"]'
+#kconfig: '["CONFIG_ZMK_MOUSE=y", "CONFIG_ZMK_SLEEP=y", "CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=3600000", "CONFIG_BT_CTLR_TX_PWR_PLUS_8=y", "CONFIG_ZMK_KEYBOARD_NAME=\"Corne Nano\""]'
+#branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
 
+include:
+  - board: nice_nano_v2
+    shield: splitkb_aurora_corne_left
+  - board: nice_nano_v2
+    shield: splitkb_aurora_corne_right
