@@ -54,7 +54,7 @@
             label = "digraph_ij";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp I &kp J>;
+            bindings = <&macro_tap &kp I>, <&macro_tap &kp J>;
         };
 
     };
