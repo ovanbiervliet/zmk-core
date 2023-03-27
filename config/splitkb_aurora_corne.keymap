@@ -49,6 +49,14 @@
             #binding-cells = <0>;
             bindings = <&macro_press &kp LGUI>, <&macro_press &kp LCTRL>, <&macro_tap &kp SPACE>, <&macro_release &kp LCTRL>, <&macro_release &kp LGUI>;
         };
+
+        digraph_ij: digraph_ij {
+            label = "dij";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp I &kp J>;
+        };
+
     };
 
     behaviors {
@@ -138,7 +146,7 @@
         sym_layer {
             bindings = <
                 &none        &kp EXCL         &kp AT          &kp HASH        &kp DLLR       &kp PRCT                   &kp CRRT           &kp AMPS           &kp ASTRK          &kp MINUS         &kp EQL           &none
-                &none        &kp LPAR         &kp LBKT        &kp RBKT        &kp RPAR       &kp LS(LA(NUM_2))          &caps_word         &gmt LGUI LEFT     &gmt LALT DOWN     &gmt LCTRL UP     &gmt LSHFT RIGHT  &none
+                &none        &kp LPAR         &kp LBKT        &kp RBKT        &kp RPAR       &kp LS(LA(NUM_2))          &caps_word         &gmt LGUI LEFT     &gmt LALT DOWN     &gmt LCTRL &dij   &gmt LSHFT RIGHT  &none
                 &none        &kp LT           &kp GRAVE       &kp BSLH        &kp GT         &kp LA(NUM_3)              &key_repeat        &kp MINUS          &kp EQL            &kp LS(SEMI)      &kp SEMI          &none
                                                               &kp ESC         &kp SPACE      &kp TAB                    &none              &none              &none
             >;
