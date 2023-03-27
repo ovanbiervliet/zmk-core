@@ -18,21 +18,21 @@
 };
 
 / {
-    //combos {
-      //  compatible = "zmk,combos";
+    combos {
+        compatible = "zmk,combos";
 
-        //combo_tab {
-        //  timeout-ms = <20>;
-        //  key-positions = <1 2>;
-        //  bindings = <&kp TAB>;
-        //};
+        combo_tab {
+          timeout-ms = <20>;
+          key-positions = <1 2>;
+          bindings = <&kp TAB>;
+        };
 
       //  combo_enter {
         //    timeout-ms = <20>;
           //  key-positions = <13 14>;
           //  bindings = <&kp ENTER>;
         //};
-    //};
+    };
 
     macros {
         spotlight: spotlight {
@@ -111,6 +111,7 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
+
         glt: global-quick-layer-tap {
             compatible = "zmk,behavior-hold-tap";
             label = "glt";
@@ -120,6 +121,17 @@
             quick-tap-ms = <150>;
             global-quick-tap;
             bindings = <&mo>, <&kp>;
+        };
+
+        gdt: global-quick-digraph-tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "gdt";
+            #binding-cells = <1>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            global-quick-tap;
+            bindings = <&kp>, <&dij>;
         };
 
     };
@@ -140,7 +152,7 @@
             bindings = <
                 &none        &bootloader      &none           &none           &none           &none                     &none             &none              &none              &none             &none             &none
                 &none        &kp LSHFT        &kp LCTRL       &kp LALT        &kp LGUI        &none                     &none             &kp LEFT           &kp DOWN           &kp UP            &kp RIGHT         &none
-                &none        &none            &none           &none           &none           &none                     &kp INS           &kp HOME           &kp PG_DN          &kp PG_UP         &kp END         &none
+                &none        &none            &none           &none           &none           &none                     &kp INS           &kp HOME           &kp PG_DN          &kp PG_UP         &kp END           &none
                                                               &none           &none           &none                     &kp BSPC          &kp RET            &kp DEL
             >;
         };
@@ -148,7 +160,7 @@
         sym_layer {
             bindings = <
                 &none        &kp EXCL         &kp AT          &kp HASH        &kp DLLR       &kp PRCT                   &kp CRRT           &kp AMPS           &kp ASTRK          &kp MINUS         &kp EQL           &none
-                &none        &kp LPAR         &kp LBKT        &kp RBKT        &kp RPAR       &kp LS(LA(NUM_2))          &caps_word         &gmt LGUI LEFT     &gmt LALT DOWN     &dij              &gmt LSHFT RIGHT  &dij
+                &none        &kp LPAR         &kp LBKT        &kp RBKT        &kp RPAR       &kp LS(LA(NUM_2))          &caps_word         &gmt LGUI LEFT     &gmt LALT DOWN     &gdt LCTRL        &gmt LSHFT RIGHT  &dij
                 &none        &kp LT           &kp GRAVE       &kp BSLH        &kp GT         &kp LA(NUM_3)              &key_repeat        &kp MINUS          &kp EQL            &kp LS(SEMI)      &kp SEMI          &none
                                                               &kp ESC         &kp SPACE      &kp TAB                    &none              &none              &none
             >;
