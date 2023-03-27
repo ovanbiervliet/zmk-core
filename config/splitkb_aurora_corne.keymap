@@ -50,8 +50,8 @@
             bindings = <&macro_press &kp LGUI>, <&macro_press &kp LCTRL>, <&macro_tap &kp SPACE>, <&macro_release &kp LCTRL>, <&macro_release &kp LGUI>;
         };
 
-        digraph_ij: digraph_ij {
-            label = "dij";
+        dij: digraph_ij {
+            label = "digraph_ij";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap &kp I &kp J>;
