@@ -53,6 +53,8 @@
         dij: digraph_ij {
             label = "digraph_ij";
             compatible = "zmk,behavior-macro";
+            wait-ms = <20>;
+            tap-ms = <20>;
             #binding-cells = <0>;
             bindings = <&macro_tap &kp I>, <&macro_tap &kp J>;
         };
