@@ -70,7 +70,7 @@
 
         combo_ij {
           timeout-ms = <20>;
-          key-positions = <20,21>;
+          key-positions = <20 21>;
           bindings = <&ij>;
         };
 
