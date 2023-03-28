@@ -169,7 +169,7 @@
             bindings = <
                 &kp DOWN     &kp Q            &kp W           &kp F           &kp P           &kp G                    &kp J              &kp L              &kp U              &kp Y             &kp SQT           &kp UP
                 &kp LEFT     &gmt LSHFT A     &gmt LCTRL R    &gmt LALT S     &gmt LGUI T     &kp D                    &kp H              &gmt LGUI N        &gmt LALT E        &gmt LCTRL I      &gmt LSHFT O      &kp RIGHT
-                U_BTN2       &kp Z            &kp X           &kp C           &kp V           &kp B                    &kp K              &kp M              &kp COMMA          &kp DOT           &kp SLASH         U_BTN1
+                U_BTN1       &kp Z            &kp X           &kp C           &kp V           &kp B                    &kp K              &kp M              &kp COMMA          &kp DOT           &kp SLASH         U_BTN1
                                                               &glt NAV ESC    &glt NUM SPACE  &glt SYM TAB             &glt NUM BSPC      &glt SYM RET       &glt NAV DEL
             >;
         };
