@@ -34,8 +34,8 @@
             bindings = <&macro_press &kp LGUI>, <&macro_press &kp LCTRL>, <&macro_tap &kp SPACE>, <&macro_release &kp LCTRL>, <&macro_release &kp LGUI>;
         };
 
-        dij: dutch_ij {
-            label = "dutch_ij";
+        ij: ij {
+            label = "ij";
             compatible = "zmk,behavior-macro";
             wait-ms = <20>;
             tap-ms = <20>;
@@ -43,8 +43,8 @@
             bindings = <&macro_tap &kp I>, <&macro_tap &kp J>;
         };
 
-        sch: dutch_sch {
-            label = "dutch_sch";
+        sch: sch {
+            label = "sch";
             compatible = "zmk,behavior-macro";
             wait-ms = <20>;
             tap-ms = <20>;
@@ -64,8 +64,14 @@
 
         combo_sch {
           timeout-ms = <20>;
-          key-positions = <15 27>;
+          key-positions = <14 15>;
           bindings = <&sch>;
+        };
+
+        combo_ij {
+          timeout-ms = <20>;
+          key-positions = <20,21>;
+          bindings = <&ij>;
         };
 
       //  combo_enter {
@@ -145,7 +151,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
             global-quick-tap;
-            bindings = <&kp>, <&dij>;
+            bindings = <&kp>, <&ij>;
         };
 
     };
@@ -173,8 +179,8 @@
 
         sym_layer {
             bindings = <
-                &none        &kp EXCL         &kp AT          &kp HASH        &kp DLLR       &kp PRCT                   &kp CRRT           &kp AMPS           &kp ASTRK          &kp MINUS         &kp EQL           &none
-                &none        &kp LPAR         &kp LBKT        &kp RBKT        &kp RPAR       &kp LS(LA(NUM_2))          &caps_word         &gmt LGUI LEFT     &gmt LALT DOWN     &gdt LCTRL I      &gmt LSHFT RIGHT  &dij
+                &none        &kp EXCL         &kp AT          &kp HASH        &kp DLLR       &kp PRCT                   &kp CRRT           &kp AMPS           &kp ASTRK          &kp MINUS         &kp EQL           &ij
+                &none        &kp LPAR         &kp LBKT        &kp RBKT        &kp RPAR       &kp LS(LA(NUM_2))          &caps_word         &gmt LGUI LEFT     &gmt LALT DOWN     &gmt LCTRL UP     &gmt LSHFT RIGHT  &ij
                 &none        &kp LT           &kp GRAVE       &kp BSLH        &kp GT         &kp LA(NUM_3)              &key_repeat        &kp MINUS          &kp EQL            &kp LS(SEMI)      &kp SEMI          &none
                                                               &kp ESC         &kp SPACE      &kp TAB                    &none              &none              &none
             >;
