@@ -37,8 +37,8 @@
         ij: ij {
             label = "ij";
             compatible = "zmk,behavior-macro";
-            wait-ms = <20>;
-            tap-ms = <20>;
+            wait-ms = <30>;
+            tap-ms = <30>;
             #binding-cells = <0>;
             bindings = <&macro_tap &kp I>, <&macro_tap &kp J>;
         };
@@ -46,8 +46,8 @@
         sch: sch {
             label = "sch";
             compatible = "zmk,behavior-macro";
-            wait-ms = <20>;
-            tap-ms = <20>;
+            wait-ms = <30>;
+            tap-ms = <30>;
             #binding-cells = <0>;
             bindings = <&macro_tap &kp S>, <&macro_tap &kp C>, <&macro_tap &kp H>;
         };
@@ -164,25 +164,25 @@
                 &kp DOWN     &kp Q            &kp W           &kp F           &kp P           &kp G                    &kp J              &kp L              &kp U              &kp Y             &kp SQT           &kp UP
                 &kp LEFT     &gmt LSHFT A     &gmt LCTRL R    &gmt LALT S     &gmt LGUI T     &kp D                    &kp H              &gmt LGUI N        &gmt LALT E        &gmt LCTRL I      &gmt LSHFT O      &kp RIGHT
                 &none        &kp Z            &kp X           &kp C           &kp V           &kp B                    &kp K              &kp M              &kp COMMA          &kp DOT           &kp SLASH         &none
-                                                              &glt NAV ESC    &glt NUM SPACE  &glt SYM TAB             &glt SYM BSPC      &glt NUM RET       &glt NAV DEL
+                                                              &glt NAV ESC    &glt NUM SPACE  &glt SYM TAB             &glt NUM BSPC      &glt SYM RET       &glt NAV DEL
             >;
         };
 
         nav_layer {
             bindings = <
-                &none        &bootloader      &none           &none           &none           &none                     &none             &none              &none              &none             &none             &none
+                &none        &bootloader      &none           &none           &none           &none                     &none             &kp HOME           &kp PG_DN          &kp PG_UP         &kp END           &none
                 &none        &kp LSHFT        &kp LCTRL       &kp LALT        &kp LGUI        &none                     &none             &kp LEFT           &kp DOWN           &kp UP            &kp RIGHT         &none
-                &none        &none            &none           &none           &none           &none                     &kp INS           &kp HOME           &kp PG_DN          &kp PG_UP         &kp END           &none
+                &none        &none            &none           &none           &none           &none                     &kp INS           &none              &none              &none             &none             &none
                                                               &none           &none           &none                     &kp BSPC          &kp RET            &kp DEL
             >;
         };
 
         sym_layer {
             bindings = <
-                &none        &kp EXCL         &kp AT          &kp HASH        &kp DLLR       &kp PRCT                   &kp CRRT           &kp AMPS           &kp ASTRK          &kp MINUS         &kp EQL           &ij
-                &none        &kp LPAR         &kp LBKT        &kp RBKT        &kp RPAR       &kp LS(LA(NUM_2))          &caps_word         &gmt LGUI LEFT     &gmt LALT DOWN     &gmt LCTRL UP     &gmt LSHFT RIGHT  &ij
-                &none        &kp LT           &kp GRAVE       &kp BSLH        &kp GT         &kp LA(NUM_3)              &key_repeat        &kp MINUS          &kp EQL            &kp LS(SEMI)      &kp SEMI          &none
-                                                              &kp ESC         &kp SPACE      &kp TAB                    &none              &none              &none
+                &none        &kp EXCL         &kp AT          &kp HASH        &kp DLLR       &kp PRCT                   &kp CRRT          &kp HOME           &kp PG_DN          &kp PG_UP         &kp END           &none
+                &none        &kp LPAR         &kp LBKT        &kp RBKT        &kp RPAR       &kp LS(LA(NUM_2))          &kp AMPS          &gmt LGUI LEFT     &gmt LALT DOWN     &gmt LCTRL UP     &gmt LSHFT RIGHT  &none
+                &none        &kp LT           &kp GRAVE       &kp BSLH        &kp GT         &kp LA(NUM_3)              &kp ASTRK         &kp MINUS          &kp EQL            &kp LS(SEMI)      &kp SEMI          &none
+                                                              &kp ESC         &kp SPACE      &kp TAB                    &caps_word        &none              &key_repeat
             >;
         };
 
