@@ -161,8 +161,8 @@
 
         mac_layer {
             bindings = <
-                &none        &kp Q            &kp W           &kp F           &kp P           &kp G                    &kp J              &kp L              &kp U              &kp Y             &kp SQT           &none
-                &none        &gmt LSHFT A     &gmt LCTRL R    &gmt LALT S     &gmt LGUI T     &kp D                    &kp H              &gmt LGUI N        &gmt LALT E        &gmt LCTRL I      &gmt LSHFT O      &none
+                &kp DOWN     &kp Q            &kp W           &kp F           &kp P           &kp G                    &kp J              &kp L              &kp U              &kp Y             &kp SQT           &kp UP
+                &kp LEFT     &gmt LSHFT A     &gmt LCTRL R    &gmt LALT S     &gmt LGUI T     &kp D                    &kp H              &gmt LGUI N        &gmt LALT E        &gmt LCTRL I      &gmt LSHFT O      &kp RIGHT
                 &none        &kp Z            &kp X           &kp C           &kp V           &kp B                    &kp K              &kp M              &kp COMMA          &kp DOT           &kp SLASH         &none
                                                               &glt NAV ESC    &glt NUM SPACE  &glt SYM TAB             &glt SYM BSPC      &glt NUM RET       &glt NAV DEL
             >;
