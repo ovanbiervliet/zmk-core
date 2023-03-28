@@ -153,8 +153,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "gdt";
             #binding-cells = <2>;
-            flavor = "xxqqtap-preferred";
-            tapping-term-qz zqqms = <200>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
             quick-tap-ms = <150>;
             global-quick-tap;
             bindings = <&kp>, <&ij>;
