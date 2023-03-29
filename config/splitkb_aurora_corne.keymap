@@ -68,19 +68,19 @@
           bindings = <&kp TAB>;
         };
 
-        combo_sch {
-          timeout-ms = <20>;
-          key-positions = <14 15>;
-          bindings = <&sch>;
-        };
-
-        combo_ij {
-          timeout-ms = <20>;
-          key-positions = <20 21>;
-          bindings = <&ij>;
-        };
-
-      //  combo_enter {
+        //  combo_sch {
+        //    timeout-ms = <20>;
+        //    key-positions = <14 15>;
+        //    bindings = <&sch>;
+        //  };
+        //
+        //  combo_ij {
+        //    timeout-ms = <20>;
+        //    key-positions = <20 21>;
+        //    bindings = <&ij>;
+        //  };
+        
+        //  combo_enter {
         //    timeout-ms = <20>;
           //  key-positions = <13 14>;
           //  bindings = <&kp ENTER>;
@@ -147,17 +147,6 @@
             quick-tap-ms = <150>;
             global-quick-tap;
             bindings = <&mo>, <&kp>;
-        };
-
-        gdt: global-quick-digraph-tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "gdt";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
-            global-quick-tap;
-            bindings = <&kp>, <&ij>;
         };
 
     };
