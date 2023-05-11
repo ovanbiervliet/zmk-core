@@ -155,6 +155,7 @@
     keymap {
         compatible = "zmk,keymap";
 
+        // to properly map Colemak to Qwerty on macOS, we use P for semicolon
         qwt_layer {
             bindings = <
                 U_BTN2       &kp Q            &kp W           &kp E           &kp R           &kp T                    &kp Y              &kp U              &kp I              &kp O             &kp SQT           U_BTN4
@@ -177,7 +178,7 @@
             bindings = <
                 &none        &kp EXCL         &kp AT          &kp HASH        &kp DLLR       &kp PRCT                   &kp CRRT          &kp AMPS           &kp ASTRK          &kp PG_UP         &kp END           &to QWT
                 &none        &kp LPAR         &kp LBKT        &kp RBKT        &kp RPAR       &kp LS(LA(NUM_2))          &caps_word        &gmt LGUI LEFT     &gmt LALT DOWN     &gmt LCTRL UP     &gmt LSHFT RIGHT  &to CMK
-                &none        &kp LT           &kp GRAVE       &kp BSLH        &kp GT         &kp LA(NUM_3)              &key_repeat       &kp MINUS          &kp EQL            &kp LS(SEMI)      &kp SEMICOLON     &none
+                &none        &kp LT           &kp GRAVE       &kp BSLH        &kp GT         &kp LA(NUM_3)              &key_repeat       &kp MINUS          &kp EQL            &kp LS(P)         &kp P             &none
                                                               &kp ESC         &kp SPACE      &kp TAB                    &none             &none              &none
             >;
         };
@@ -185,8 +186,8 @@
         num_layer {
             bindings = <
                 &none        &bootloader      &none           &none           &none          &none                      &none              &kp NUM_7          &kp NUM_8          &kp NUM_9         &kp BSPC          &none
-                &none        &kp LSHFT        &kp LCTRL       &kp LALT        &kp LGUI       &none                      &kp COMMA          &kp NUM_4          &kp NUM_5          &kp NUM_6         &kp SEMI          &none
-                &none        &none            &none           &none           &none          &none                      &kp DOT            &kp NUM_1          &kp NUM_2          &kp NUM_3         &kp COLON         &none
+                &none        &kp LSHFT        &kp LCTRL       &kp LALT        &kp LGUI       &none                      &kp COMMA          &kp NUM_4          &kp NUM_5          &kp NUM_6         &kp P             &none
+                &none        &none            &none           &none           &none          &none                      &kp DOT            &kp NUM_1          &kp NUM_2          &kp NUM_3         &kp LS(P)         &none
                                                               &none           &none          &none                      &none              &kp NUM_0          &none
             >;
         };
