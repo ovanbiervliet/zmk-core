@@ -157,9 +157,9 @@
 
         cmk_layer {
             bindings = <
-                U_BTN2       &kp Q            &kp W           &kp F           &kp P           &kp G                    &kp J              &kp L              &kp U              &kp Y             &kp SQT           U_BTN4
-                U_BTN3       &gmt LSHFT A     &gmt LCTRL R    &gmt LALT S     &gmt LGUI T     &kp D                    &kp H              &gmt LGUI N        &gmt LALT E        &gmt LCTRL I      &gmt LSHFT O      U_BTN5
-                U_BTN1       &kp Z            &kp X           &kp C           &kp V           &kp B                    &kp K              &kp M              &kp COMMA          &kp DOT           &kp SLASH         U_BTN3
+                U_BTN1       &kp Q            &kp W           &kp F           &kp P           &kp G                    &kp J              &kp L              &kp U              &kp Y             &kp SQT           U_BTN4
+                &kp LGUI     &gmt LSHFT A     &gmt LCTRL R    &gmt LALT S     &gmt LGUI T     &kp D                    &kp H              &gmt LGUI N        &gmt LALT E        &gmt LCTRL I      &gmt LSHFT O      U_BTN5
+                U_BTN2       &kp Z            &kp X           &kp C           &kp V           &kp B                    &kp K              &kp M              &kp COMMA          &kp DOT           &kp SLASH         U_BTN3
                                                               &glt NAV ESC    &glt NUM SPACE  &glt SYM TAB             &glt NUM BSPC      &glt SYM RET       &glt NAV DEL
             >;
         };
@@ -193,8 +193,8 @@
 
         qwt_layer {
             bindings = <
-                U_BTN2       &kp Q            &kp W           &kp E           &kp R           &kp T                    &kp Y              &kp U              &kp I              &kp O             &kp P             U_BTN4
-                U_BTN3       &gmt LSHFT A     &gmt LCTRL S    &gmt LALT D     &gmt LGUI F     &kp G                    &kp H              &gmt LGUI J        &gmt LALT K        &gmt LCTRL L      &gmt LSHFT SQT    U_BTN5
+                U_BTN2       &kp Q            &kp W           &kp E           &kp R           &kp T                    &kp Y              &kp U              &kp I              &kp O             &kp SQT           U_BTN4
+                U_BTN3       &gmt LSHFT A     &gmt LCTRL S    &gmt LALT D     &gmt LGUI F     &kp G                    &kp H              &gmt LGUI J        &gmt LALT K        &gmt LCTRL L      &gmt LSHFT O      U_BTN5
                 U_BTN1       &kp Z            &kp X           &kp C           &kp V           &kp B                    &kp N              &kp M              &kp COMMA          &kp DOT           &kp SLASH         U_BTN3
                                                               &glt NAV ESC    &glt NUM SPACE  &glt SYM TAB             &glt NUM BSPC      &glt SYM RET       &glt NAV DEL
             >;
