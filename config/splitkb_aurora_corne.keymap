@@ -194,7 +194,7 @@
         qwt_layer {
             bindings = <
                 U_BTN2       &kp Q            &kp W           &kp E           &kp R           &kp T                    &kp Y              &kp U              &kp I              &kp O             &kp SQT           U_BTN4
-                U_BTN3       &gmt LSHFT A     &gmt LCTRL S    &gmt LALT D     &gmt LGUI F     &kp G                    &kp H              &gmt LGUI J        &gmt LALT K        &gmt LCTRL L      &gmt LSHFT O      U_BTN5
+                U_BTN3       &gmt LSHFT A     &gmt LCTRL S    &gmt LALT D     &gmt LGUI F     &kp G                    &kp H              &gmt LGUI J        &gmt LALT K        &gmt LCTRL L      &gmt LSHFT SEMI   U_BTN5
                 U_BTN1       &kp Z            &kp X           &kp C           &kp V           &kp B                    &kp N              &kp M              &kp COMMA          &kp DOT           &kp SLASH         U_BTN3
                                                               &glt NAV ESC    &glt NUM SPACE  &glt SYM TAB             &glt NUM BSPC      &glt SYM RET       &glt NAV DEL
             >;
