@@ -166,7 +166,7 @@
             bindings = <
                 U_BTN4       &kp Q            &kp W           &kp E           &kp R           &kp T                    &kp Y              &kp U              &kp I              &kp O             &kp SQT           U_CPY
                 U_BTN5       &gmt LSHFT A     &gmt LCTRL S    &gmt LALT D     &gmt LGUI F     &kp G                    &kp H              &gmt LGUI J        &gmt LALT K        &gmt LCTRL L      &gmt LSHFT SEMI   U_PST
-                U_BTN2       &kp Z            &kp X           &kp C           &kp V           &kp B                    &kp N              &kp M              &kp COMMA          &kp DOT           &kp SLASH         &gmt U_BTN3 U_BTN1
+                U_BTN3       &kp Z            &kp X           &kp C           &kp V           &kp B                    &kp N              &kp M              &kp COMMA          &kp DOT           &kp SLASH         U_BTN1
                                                               &glt NAV ESC    &glt NUM SPACE  &mt U_BTN3 TAB           &glt NUM BSPC      &glt SYM RET       &glt NAV DEL
             >;
         };
