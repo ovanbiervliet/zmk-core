@@ -156,8 +156,7 @@
             bindings = <&mo>, <&kp>;
         };
 
-        gbt: global-quick-mod-tap {
-            // mouse buttons
+        gbt: global-quick-mousebutton-tap {
             compatible = "zmk,behavior-hold-tap";
             label = "gbt";
             #binding-cells = <2>;
