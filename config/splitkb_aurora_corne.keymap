@@ -176,10 +176,10 @@
         // to properly map Colemak to Qwerty on macOS, we use P for semicolon
         qwt_layer {
             bindings = <
-                U_BTN4       &kp Q            &kp W           &kp E           &kp R           &kp T                    &kp Y              &kp U              &kp I              &kp O             &kp SQT           U_CPY
-                U_BTN5       &gmt LSHFT A     &gmt LCTRL S    &gmt LALT D     &gmt LGUI F     &kp G                    &kp H              &gmt LGUI J        &gmt LALT K        &gmt LCTRL L      &gmt LSHFT SEMI   U_PST
-                U_BTN1       &kp Z            &kp X           &kp C           &kp V           &kp B                    &kp N              &kp M              &kp COMMA          &kp DOT           &kp SLASH         U_BTN1
-                                                              &glt NAV ESC    &glt NUM SPACE  &kp TAB                  &kp BSPC           &glt SYM RET       &gbt MB3 DEL
+                &kp TAB       &kp Q            &kp W           &kp E           &kp R           &kp T                    &kp Y              &kp U              &kp I              &kp O             &kp SQT           U_BTN4
+                &kp ESC       &gmt LSHFT A     &gmt LCTRL S    &gmt LALT D     &gmt LGUI F     &kp G                    &kp H              &gmt LGUI J        &gmt LALT K        &gmt LCTRL L      &gmt LSHFT SEMI   U_BTN5
+                U_BTN3        &kp Z            &kp X           &kp C           &kp V           &kp B                    &kp N              &kp M              &kp COMMA          &kp DOT           &kp SLASH         &none
+                                                               &glt NAV MB4    &glt NUM SPACE  U_BTN1                   &kp BSPC           &glt SYM RET       &gbt MB3 DEL
             >;
         };
 
@@ -187,7 +187,7 @@
             bindings = <
                 U_WH_D       &bootloader      &none           &none           &none           &none                     &none             &kp HOME           &kp PG_DN          &kp PG_UP         &kp END           U_MS_D
                 U_WH_U       &kp LSHFT        &kp LCTRL       &kp LALT        &kp LGUI        &none                     &none             &kp LEFT           &kp DOWN           &kp UP            &kp RIGHT         U_MS_U
-                &mkp MB3     &none            &none           &none           &none           &none                     &kp INS           &none              &none              &none             &none             U_BTN1
+                &mkp MB3     &none            &none           &none           &none           &none                     &kp INS           &none              &none              &none             &none             &none
                                                               &none           &none           &none                     &kp BSPC          &kp RET            &kp DEL
             >;
         };
@@ -195,7 +195,7 @@
         sym_layer {
             bindings = <
                 U_UND        &kp EXCL         &kp AT          &kp HASH        &kp DLLR       &kp PRCT                   &kp CRRT          &kp AMPS           &kp ASTRK          &kp PG_UP         &kp END           &to QWT
-                U_RDO        &kp LPAR         &kp LBKT        &kp RBKT        &kp RPAR       &kp LS(LA(NUM_2))          &caps_word        &gmt LGUI LEFT     &gmt LALT DOWN     &gmt LCTRL UP     &gmt LSHFT RIGHT  &to CMK
+                U_RDO        &kp LPAR         &kp LBKT        &kp RBKT        &kp RPAR       &kp LS(LA(NUM_2))          &caps_word        &kp LEFT           &kp DOWN           &kp UP            &kp RIGHT         &to CMK
                 &none        &kp LT           &kp GRAVE       &kp BSLH        &kp GT         &kp LA(NUM_3)              &key_repeat       &kp MINUS          &kp EQL            &kp LS(P)         &kp P             &none
                                                               &kp ESC         &kp SPACE      &kp TAB                    &none             &none              &none
             >;
