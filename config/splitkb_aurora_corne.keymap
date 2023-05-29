@@ -187,8 +187,8 @@
             bindings = <
                 &mkp MB4     &bootloader      &none           &none           &none           &caps_word                &none             &kp NUM_7          &kp NUM_8          &kp NUM_9          &kp END           U_UND
                 &mkp MB5     &kp LSHFT        &kp LCTRL       &kp LALT        &kp LGUI        &key_repeat               &kp COMMA         &kp NUM_4          &kp NUM_5          &kp NUM_6          &kp RIGHT         U_RDO
-                &mkp MB3     &none            &none           &none           &none           &none                     &kp DOT           &kp NUM_1          &kp NUM_2          &kp NUM_3          &none             &none
-                                                              &none           &none           &none                     &kp BSPC          &kp RET            &kp DEL
+                &mkp MB3     &none            &none           &none           &none           &none                     &kp DOT           &kp NUM_1          &kp NUM_2          &kp NUM_3          &kp RET           &none
+                                                              &none           &none           &none                     &kp BSPC          &kp NUM_0          &kp DEL
             >;
         };
 
