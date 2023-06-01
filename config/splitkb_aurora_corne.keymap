@@ -180,7 +180,7 @@
                 &kp TAB       &kp Q            &kp W           &kp E           &kp R           &kp T                    &kp Y              &kp U              &kp I              &kp O             &kp SQT           &kp LS(P)
                 &kp ESC       &gmt LSHFT A     &gmt LCTRL S    &gmt LALT D     &gmt LGUI F     &gbt MB3 G               &kp H              &gmt LGUI J        &gmt LALT K        &gmt LCTRL L      &gmt LSHFT SEMI   &kp P
                 U_BTN3        &kp Z            &kp X           &kp C           &kp V           &kp B                    &kp N              &kp M              &kp COMMA          &kp DOT           &kp SLASH         U_BTN1
-                                                               &glt NUM ESC    U_BTN1          &kp SPACE                &kp BSPC           &glt SYM RET       &glt FIG DEL
+                                                               U_BTN1          &kp SPACE       &glt NUM ESC             &kp BSPC           &glt SYM RET       &glt FIG DEL
             >;
         };
 
@@ -198,7 +198,7 @@
                 U_WH_U       &kp EXCL         &kp AT          &kp HASH        &kp DLLR       &kp PRCT                   &kp CRRT          &kp HOME           &kp PG_DN          &kp PG_UP          &kp END           U_WH_L
                 U_WH_D       &kp LPAR         &kp LBKT        &kp RBKT        &kp RPAR       &kp LS(LA(NUM_2))          &kp AMPS          &kp LEFT           &kp DOWN           &kp UP             &kp RIGHT         U_WH_R
                 &none        &kp LT           &kp GRAVE       &kp BSLH        &kp GT         &kp LA(NUM_3)              &kp ASTRK         &kp MINUS          &kp EQL            &kp LS(P)          &kp P             &none
-                                                              &kp ESC         U_BTN2         &kp SPACE                  &none             &none              &none
+                                                              U_BTN2          &kp SPACE      &kp TAB                    &none             &none              &none
             >;
         };
 
