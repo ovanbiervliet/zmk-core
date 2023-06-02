@@ -177,10 +177,10 @@
 
         qwt_layer {
             bindings = <
-                &kp TAB       &kp Q            &kp W           &kp E           &kp R           &kp T                    &kp Y              &kp U              &kp I              &kp O             &kp SQT           &kp LS(P)
-                &kp ESC       &gmt LSHFT A     &gmt LCTRL S    &gmt LALT D     &gmt LGUI F     &gbt MB3 G               &kp H              &gmt LGUI J        &gmt LALT K        &gmt LCTRL L      &gmt LSHFT SEMI   &kp P
-                U_BTN3        &kp Z            &kp X           &kp C           &kp V           &kp B                    &kp N              &kp M              &kp COMMA          &kp DOT           &kp SLASH         U_BTN1
-                                                               U_BTN1          &kp SPACE       &glt NUM ESC             &kp BSPC           &glt SYM RET       &glt FIG DEL
+                &kp TAB     &kp Q          &kp W          &kp E         &kp R         &kp T                    &kp Y       &kp U          &kp I           &kp O          &kp SQT           &kp LS(P)
+                &kp ESC     &gmt LSHFT A   &gmt LCTRL S   &gmt LALT D   &gmt LGUI F   &gbt MB3 G               &kp H       &gmt LGUI J    &gmt LALT K     &gmt LCTRL L   &gmt LSHFT SEMI   &kp P
+                U_BTN3      &kp Z          &kp X          &kp C         &kp V         &kp B                    &kp N       &kp M          &kp COMMA       &kp DOT        &kp SLASH         U_BTN1
+                                                          &glt NUM ESC  &kp SPACE     U_BTN1                   &kp BSPC    &glt SYM RET   &glt FIG DEL
             >;
         };
 
