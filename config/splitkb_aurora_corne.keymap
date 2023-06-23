@@ -180,7 +180,7 @@
                 &kp TAB     &kp Q          &kp W          &kp E            &kp R          &kp T                   &kp Y       &kp U          &kp I           &kp O          &kp P             U_BTN3
                 &kp ESC     &gmt LSHFT A   &gmt LCTRL S   &gmt LALT D      &gmt LGUI F    &gbt MB3 G              &kp H       &gmt LGUI J    &gmt LALT K     &gmt LCTRL L   &gmt LSHFT SEMI   &kp SQT
                 &kp SPACE   &kp Z          &kp X          &kp C            &kp V          &kp B                   &kp N       &kp M          &kp COMMA       &kp DOT        &kp SLASH         &none
-                                                          &gbt U_BTN3 ESC  &glt NUM SPACE U_BTN1                  &kp BSPC    &glt SYM RET   &glt FIG DEL
+                                                          &gbt MB3 ESC     &glt NUM SPACE U_BTN1                  &kp BSPC    &glt SYM RET   &glt FIG DEL
             >;
         };
 
