@@ -10,7 +10,7 @@
 #define NUM 1
 #define SYM 2
 #define FIG 3
-#define QWT 4
+#define DEF 4
 
 #define U_RDO &kp LS(LG(Z))
 #define U_PST &kp LG(V)
@@ -175,11 +175,11 @@
 
         // to properly map Colemak to Qwerty on macOS, we use P for semicolon
 
-        qwt_layer {
+        def_layer {
             bindings = <
                 &kp TAB     &kp Q          &kp W          &kp E            &kp R          &kp T                   &kp Y       &kp U          &kp I           &kp O          &kp P             U_BTN3
-                &kp ESC     &gmt LSHFT A   &gmt LCTRL S   &gmt LALT D      &gmt LGUI F    &gbt MB3 G              &kp H       &gmt LGUI J    &gmt LALT K     &gmt LCTRL L   &gmt LSHFT SEMI   &kp SQT
-                &kp SPACE   &kp Z          &kp X          &kp C            &kp V          &kp B                   &kp N       &kp M          &kp COMMA       &kp DOT        &kp SLASH         &none
+                &kp ESC     &kp A          &kp S          &kp D            &kp F          &kp G                   &kp H       &kp J          &kp K           &kp L          &kp SEMI          &kp SQT
+                &kp SPACE   &kp Z          &kp X          &kp C            &kp V          &kp B                   &kp N       &kp M          &kp COMMA       &kp DOT        &kp SLASH         U_BTN3
                                                           &gbt MB3 ESC     &glt NUM SPACE U_BTN1                  &kp BSPC    &glt SYM RET   &glt FIG DEL
             >;
         };
@@ -195,17 +195,17 @@
 
         sym_layer {
             bindings = <
-                U_WH_U      &kp EXCL       &kp AT         &kp HASH      &kp DLLR     &kp PRCT                 &kp CRRT     &kp AMPS      &kp ASTRK       U_WH_L         U_WH_R         &kp PG_UP
-                U_WH_D      &kp LPAR       &kp LBKT       &kp RBKT      &kp RPAR     &kp LS(LA(NUM_2))        &kp HOME     &kp LEFT      &kp DOWN        &kp UP         &kp RIGHT      &kp PG_DN
-                &none       &kp LT         &kp GRAVE      &kp BSLH      &kp GT       &kp LA(NUM_3)            &kp END      &kp MINUS     &kp EQL         &kp LS(P)      &kp P          &none
-                                                          U_BTN2        &kp SPACE    &kp TAB                  &none        &none         &none
+                U_WH_U      &kp EXCL       &kp AT         &kp HASH      &kp DLLR     &kp PRCT                 &kp CRRT     &kp AMPS        &kp ASTRK       U_WH_L         U_WH_R             &kp PG_UP
+                U_WH_D      &kp LPAR       &kp LBKT       &kp RBKT      &kp RPAR     &kp LS(LA(NUM_2))        &kp HOME     &kp LGUI        &kp LALT        &kp LCTRL      &kp LSHFT          &kp PG_DN
+                &none       &kp LT         &kp GRAVE      &kp BSLH      &kp GT       &kp LA(NUM_3)            &kp END      &kp MINUS       &kp EQL         &kp LS(P)      &kp P              &none
+                                                          U_BTN2        &kp SPACE    &kp TAB                  &none        &none           &none
             >;
         };
                                           
         fig_layer {
             bindings = <
-                &mkp MB4    &bootloader    &none          &none         &none        &to QWT                  &none         U_WH_L         U_WH_D         U_WH_U        U_WH_R            &kp LG(NUM_0)
-                &mkp MB5    &kp LSHFT      &kp LCTRL      &kp LALT      &kp LGUI     &to CMK                  &kp COMMA     U_MS_L         U_MS_D         U_MS_U        U_MS_R            U_BTN1
+                &mkp MB4    &bootloader    &none          &none         &none        &to DEF                  &none         U_MS_L         U_MS_D         U_MS_U        U_MS_R            &kp LG(NUM_0)
+                &mkp MB5    &kp LSHFT      &kp LCTRL      &kp LALT      &kp LGUI     &to CMK                  &kp COMMA     &kp LEFT       &kp DOWN       &kp UP        &kp RIGHT         U_BTN1
                 &mkp MB3    &none          &none          &none         &none        &none                    &kp DOT       &kp RET        &kp ESC        &kp LG(BSLH)  &kp LG(SLASH)     &none
                                                           &none         &none        &none                    &none         &kp NUM_0      &none
             >;
