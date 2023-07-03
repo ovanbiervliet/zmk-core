@@ -209,7 +209,7 @@
                 &kp TAB     &kp Q          &kp W          &kp E            &kp R          &kp T                   &kp Y       &kp U          &kp I           &kp O          &kp P             &bspc_del
                 &kp ESC     &gmt LSHFT A   &gmt LCTRL S   &gmt LALT D      &gmt LGUI F    &kp G                   &kp H       &gmt LGUI J    &gmt LALT K     &gmt LCTRL L   &gmt LSHFT SEMI   &kp SQT
                 &sk LSHFT   &kp Z          &kp X          &kp C            &kp V          &kp B                   &kp N       &kp M          &kp COMMA       &kp DOT        &kp SLASH         &kp LSHFT
-                                                          &kp ESC          &glt NUM TAB   &mkp MB1            &kp SPACE    &glt SYM RET   &glt FIG bspc_del
+                                                          &kp ESC          &glt NUM TAB   &mkp MB1            &kp SPACE    &glt SYM RET   &glt FIG (bspc_del)
             >;
         };
 
