@@ -167,6 +167,21 @@
             bindings = <&mkp>, <&kp>;
         };
 
+        gkm: global-mod-mouse-tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "gkm";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            global-quick-tap;
+            bindings = <&kp>, <&mkp>;
+        };
+
+        &sk {
+            // release-after-ms = <2000>;
+            quick-release;
+        };
 
     };
 
@@ -179,8 +194,8 @@
             bindings = <
                 &kp TAB     &kp Q          &kp W          &kp E            &kp R          &kp T                   &kp Y       &kp U          &kp I           &kp O          &kp P             &kp BSPC
                 &kp ESC     &kp A          &kp S          &kp D            &kp F          &kp G                   &kp H       &kp J          &kp K           &kp L          &kp SEMI          &kp SQT
-                &kp LSHFT   &kp Z          &kp X          &kp C            &kp V          &kp B                   &kp N       &kp M          &kp COMMA       &kp DOT        &kp SLASH         &kp LSHFT
-                                                        &gmt LCTRL ESC   &gmt LALT MB1    &gmt LGUI SPACE         &glt NUM SPACE    &glt SYM RET   &glt FIG DEL
+                &sk LSHFT   &kp Z          &kp X          &kp C            &kp V          &kp B                   &kp N       &kp M          &kp COMMA       &kp DOT        &kp SLASH         &kp LSHFT
+                                                        &gmt LCTRL ESC   &gkm LALT MB1    &gmt LGUI SPACE         &glt NUM SPACE    &glt SYM RET   &glt FIG DEL
             >;
         };
 
