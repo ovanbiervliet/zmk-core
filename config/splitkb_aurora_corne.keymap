@@ -30,6 +30,13 @@
     global-quick-tap;
 };
 
+& sk {
+    // release-after-ms = <2000>;
+    quick-release;
+};
+
+
+
 / {
     macros {
         spotlight: spotlight {
@@ -177,13 +184,7 @@
             global-quick-tap;
             bindings = <&kp>, <&mkp>;
         };
-
-        &sk {
-            // release-after-ms = <2000>;
-            quick-release;
-        };
-
-    };
+};
 
     keymap {
         compatible = "zmk,keymap";
