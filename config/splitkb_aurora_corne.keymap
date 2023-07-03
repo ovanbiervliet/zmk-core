@@ -30,7 +30,7 @@
     global-quick-tap;
 };
 
-& sk {
+&sk {
     // release-after-ms = <2000>;
     quick-release;
 };
