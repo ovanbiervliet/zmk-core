@@ -215,7 +215,7 @@
                 &kp TAB     &kp Q          &kp W          &kp E            &kp R          &kp T                   &kp Y       &kp U          &kp I           &kp O          &kp P             &bspc_del
                 &kp ESC     &gmt LSHFT A   &gmt LCTRL S   &gmt LALT D      &gmt LGUI F    &kp G                   &kp H       &gmt LGUI J    &gmt LALT K     &gmt LCTRL L   &gmt LSHFT SEMI   &kp SQT
                 &sk LSHFT   &kp Z          &kp X          &kp C            &kp V          &kp B                   &kp N       &kp M          &kp COMMA       &kp DOT        &kp SLASH         &kp LSHFT
-                                                          &sl NUM          &kp SPACE      &mkp MB1                &kp RET     &sl SYM        &bspc_del
+                                                          &sl NUM          &kp SPACE      &mkp MB1                &kp TAB     &glt SYM RET   &bspc_del
             >;
         };
 
@@ -224,7 +224,7 @@
                 &mkp MB4    &bootloader    &none          &none         &none         &caps_word                  &none        &kp NUM_7      &kp NUM_8       &kp NUM_9      &kp END           U_UND
                 &mkp MB5    &kp LSHFT      &kp LCTRL      &kp LALT      &kp LGUI      &key_repeat                 &kp DOT      &kp NUM_4      &kp NUM_5       &kp NUM_6      &kp RIGHT         U_RDO
                 &mkp MB3    U_UND          U_CUT          U_CPY         U_PST         U_RDO                       &kp COMMA    &kp NUM_1      &kp NUM_2       &kp NUM_3      &kp RET           &none
-                                                          &none         &kp SPACE     &mkp MB1                    &kp RET      &kp NUM_0      &bspc_del
+                                                          &none         &kp SPACE     &mkp MB1                    &kp TAB      &kp NUM_0      &bspc_del
             >;
         };
 
@@ -233,16 +233,16 @@
                 U_WH_U      &kp EXCL       &kp AT         &kp HASH      &kp DLLR     &kp PRCT                     &kp CRRT     &kp AMPS        &kp ASTRK       U_WH_L         U_WH_R             &kp PG_UP
                 U_WH_D      &kp LPAR       &kp LBKT       &kp RBKT      &kp RPAR     &kp LS(LA(NUM_2))            &kp HOME     &kp LEFT        &kp DOWN        &kp UP         &kp RIGHT          &kp PG_DN
                 &none       &kp LT         &kp GRAVE      &kp BSLH      &kp GT       &kp LA(NUM_3)                &kp END      &kp MINUS       &kp EQL         &kp LS(P)      &kp P              &none
-                                                          U_BTN3        &kp TAB      U_BTN2                       &kp RET      &none           &bspc_del
+                                                          U_BTN3        &kp TAB      U_BTN2                       &kp TAB      &none           &bspc_del
             >;
         };
                                           
         fig_layer {
             bindings = <
-                &mkp MB4    &bootloader    &none          &none         &none        &to DEF                  &none         U_MS_L         U_MS_D         U_MS_U        U_MS_R            &kp LG(NUM_0)
-                &mkp MB5    &kp LSHFT      &kp LCTRL      &kp LALT      &kp LGUI     &to CMK                  &kp COMMA     &kp LEFT       &kp DOWN       &kp UP        &kp RIGHT         U_BTN1
-                &mkp MB3    &none          &none          &none         &none        &none                    &kp DOT       &kp RET        &kp ESC        &kp LG(BSLH)  &kp LG(SLASH)     &none
-                                                          &none         &none        &none                    &none         &kp NUM_0      &none
+                &mkp MB4    &bootloader    &none          &none         &none        &to DEF                      &none         U_MS_L         U_MS_D         U_MS_U        U_MS_R            &kp LG(NUM_0)
+                &mkp MB5    &kp LSHFT      &kp LCTRL      &kp LALT      &kp LGUI     &to CMK                      &kp COMMA     &kp LEFT       &kp DOWN       &kp UP        &kp RIGHT         U_BTN1
+                &mkp MB3    &none          &none          &none         &none        &none                        &kp DOT       &kp RET        &kp ESC        &kp LG(BSLH)  &kp LG(SLASH)     &none
+                                                          &none         &none        &none                        &none         &kp NUM_0      &none
             >;
         };
 
