@@ -63,19 +63,19 @@
         ij: ij {
             label = "ij";
             compatible = "zmk,behavior-macro";
-            wait-ms = <30>;
-            tap-ms = <30>;
+            //wait-ms = <30>;
+            //tap-ms = <30>;
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp I>, <&macro_tap &kp J>;
+            bindings = <&macro_tap &kp I &kp J>;
         };
 
         sch: sch {
             label = "sch";
             compatible = "zmk,behavior-macro";
-            wait-ms = <30>;
-            tap-ms = <30>;
+            //wait-ms = <30>;
+            //tap-ms = <30>;
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp S>, <&macro_tap &kp C>, <&macro_tap &kp H>;
+            bindings = <&macro_tap &kp S &kp C &kp H>
         };
     };
 
@@ -90,7 +90,7 @@
 
         COMBO_SCH {
           timeout-ms = <20>;
-          key-positions = <15 16>;
+          key-positions = <16 17>;
           bindings = <&sch>;
         };
 
@@ -214,8 +214,8 @@
             bindings = <
                 &kp TAB     &kp Q          &kp W          &kp E          &kp R          &kp T                   &kp Y       &kp U          &kp I           &kp O          &kp P             &bspc_del
                 &kp ESC     &gmt LSHFT A   &gmt LCTRL S   &gmt LALT D    &gmt LGUI F    &kp G                   &kp H       &gmt LGUI J    &gmt LALT K     &gmt LCTRL L   &gmt LSHFT SEMI   &kp SQT
-                &kp SPACE   &kp Z          &kp X          &kp C          &kp V          &kp B                   &kp N       &kp M          &kp COMMA       &kp DOT        &kp SLASH         &kp LSHFT
-                                                          &mkp MB1       &glt NUM SPACE &kp TAB                 &bspc_del   &glt SYM RET   &kp DEL
+                &kp SPACE   &kp Z          &kp X          &kp C          &kp V          &kp B                   &kp N       &kp M          &kp COMMA       &kp DOT        &kp SLASH         &none
+                                                          &mkp MB1       &glt NUM SPACE &kp TAB                 &bspc_del   &glt SYM RET   &kp LG(SPACE)
             >;
         };
 
