@@ -242,10 +242,10 @@
 
         num_layer {
             bindings = <
-                &mkp MB4    &bootloader    &none          &none         &none         &caps_word                 &none        &kp NUM_7      &kp NUM_8       &kp NUM_9      &kp END           U_UND
-                &mkp MB5    &kp LSHFT      &kp LCTRL      &kp LALT      &kp LGUI      &key_repeat                &kp DOT      &kp NUM_4      &kp NUM_5       &kp NUM_6      &kp RIGHT         U_RDO
-                &mkp MB3    U_UND          U_CUT          U_CPY         U_PST         U_RDO                      &kp COMMA    &kp NUM_1      &kp NUM_2       &kp NUM_3      &kp RET           &none
-                                                          &mkp MB1      &none         &kp TAB                    &kp BSPC     &kp NUM_0      &kp DEL
+                &mkp MB4    &bootloader    &none          &none         &none            &caps_word             &none        &kp NUM_7      &kp NUM_8       &kp NUM_9      &kp END           U_UND
+                &mkp MB5    &kp LSHFT      &kp LCTRL      &kp LALT      &kp LGUI         &key_repeat            &kp DOT      &kp NUM_4      &kp NUM_5       &kp NUM_6      &kp RIGHT         U_RDO
+                &mkp MB3    U_UND          U_CUT          U_CPY         U_PST            U_RDO                  &kp COMMA    &kp NUM_1      &kp NUM_2       &kp NUM_3      &kp RET           &none
+                                                          &mkp MB1      &glt NUM SPACE   &kp TAB                &kp BSPC     &kp NUM_0      &kp DEL
             >;
         };
 
@@ -254,7 +254,7 @@
                 U_WH_U      &kp EXCL       &kp AT         &kp HASH      &kp DLLR     &kp PRCT                     &kp CRRT     &kp AMPS        &kp ASTRK       U_WH_L         U_WH_R             &kp PG_UP
                 U_WH_D      &kp LPAR       &kp LBKT       &kp RBKT      &kp RPAR     &kp LS(LA(NUM_2))            &kp HOME     &kp LEFT        &kp DOWN        &kp UP         &kp RIGHT          &kp PG_DN
                 &none       &kp LT         &kp GRAVE      &kp BSLH      &kp GT       &kp LA(NUM_3)                &kp END      &kp MINUS       &kp EQL         &kp LS(P)      &kp P              &none
-                                                          U_BTN3        &kp TAB      U_BTN2                       &kp BSPC     &none           &kp DEL
+                                                          U_BTN3        &kp LG(TAB)  U_BTN2                       &kp BSPC     &none           &kp DEL
             >;
         };
                                           
