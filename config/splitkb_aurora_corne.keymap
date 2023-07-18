@@ -86,19 +86,6 @@
             bindings = <&macro_tap &kp D &kp C &kp H>;
         };
 
-        // gui + num
-        gnum: gnum {
-            label = "gnum";
-            compatible = "zmk,behavior-macro";
-            wait-ms = <0>;
-            tap-ms = <30>;
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &mo 1 &kp LGUI>
-                , <&macro_pause_for_release>
-                , <&macro_release &mo 1 &kp LGUI>;
-        };
-
         // control + num
         cnum: cnum {
             label = "cnum";
@@ -125,7 +112,25 @@
                 , <&macro_release &mo 1 &kp LALT>;
         };
 
+        // gui + num
+        gnum: gnum {
+            label = "gnum";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <30>;
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &mo 1 &kp LGUI>
+                , <&macro_pause_for_release>
+                , <&macro_release &mo 1 &kp LGUI>;
+        };
+
     };
+
+#define CNUM &cnum
+#define ANUM &anum
+#define GNUM &gnum
+
 
     combos {
         compatible = "zmk,combos";
@@ -273,7 +278,7 @@
           // | SHFT |  Z  |  X  |  C  |  V  |  B  |           |  N  |  M  |  ,  |  .  |  /  | ESC  |
           //                    | GUI |  L1 | SPC |           | ENT |  L2 | ALT |
             bindings = <
-                &kp TAB     &kp Q          &gmt cnum W    &gmt anum E    &gmt gnum R    &kp T                   &kp Y       &kp U          &kp I           &kp O          &kp P             &bspc_del
+                &kp TAB     &kp Q          &gmt CNUM W    &gmt ANUM E    &gmt GNUM R    &kp T                   &kp Y       &kp U          &kp I           &kp O          &kp P             &bspc_del
                 &kp ESC     &gmt LSHFT A   &gmt LCTRL S   &gmt LALT D    &gmt LGUI F    &kp G                   &kp H       &gmt LGUI J    &gmt LALT K     &gmt LCTRL L   &gmt LSHFT SEMI   &kp SQT
                 &kp SPACE   &kp Z          &kp X          &kp C          &kp V          &kp B                   &kp N       &kp M          &kp COMMA       &kp DOT        &kp SLASH         &none
                                                           &mkp MB1       &glt NUM SPACE &kp TAB                 &bspc_del   &glt SYM RET   &kp LG(SPACE)
