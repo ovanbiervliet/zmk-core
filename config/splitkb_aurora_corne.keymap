@@ -319,8 +319,8 @@
                                           
         fig_layer {
             bindings = <
-                &mkp MB4    &bootloader    &none          &none         &none        &to DEF                      &none         U_MS_L         U_MS_D         U_MS_U        U_MS_R            &kp LG(NUM_0)
-                &mkp MB5    &kp LSHFT      &kp LCTRL      &kp LALT      &kp LGUI     &to CMK                      &kp COMMA     &kp LEFT       &kp DOWN       &kp UP        &kp RIGHT         U_BTN1
+                &mkp MB4    &bootloader    &none          &none         &none        &tog FIG                     &none         U_MS_L         U_MS_D         U_MS_U        U_MS_R            &kp LG(NUM_0)
+                &mkp MB5    &kp LSHFT      &kp LCTRL      &kp LALT      &kp LGUI     &none                        &kp COMMA     &kp LEFT       &kp DOWN       &kp UP        &kp RIGHT         U_BTN1
                 &mkp MB3    &none          &none          &none         &none        &none                        &kp DOT       &kp RET        &kp ESC        &kp LG(BSLH)  &kp LG(SLASH)     &none
                                                           &none         &none        &none                        &none         &kp NUM_0      &none
             >;
