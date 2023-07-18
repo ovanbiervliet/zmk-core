@@ -6,11 +6,11 @@
 #include "../zmk-nodefree-config/keypos_def/keypos_42keys.h"
 #include "../zmk-nodefree-config/helper.h"
 
-#define CMK 0
+#define DEF 0
 #define NUM 1
 #define SYM 2
 #define FIG 3
-#define DEF 4
+#define CMK 4
 
 #define U_RDO &kp LS(LG(Z))
 #define U_PST &kp LG(V)
