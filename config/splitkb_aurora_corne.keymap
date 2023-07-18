@@ -300,7 +300,7 @@
                 U_WH_D      &kp LPAR       &kp LBKT       &kp RBKT      &kp RPAR     &kp LS(LA(NUM_2))            &kp HOME     &kp LEFT        &kp DOWN        &kp UP         &kp RIGHT          &kp PG_DN
                 &none       &kp LT         &kp GRAVE      &kp BSLH      &kp GT       &kp LA(NUM_3)                &kp END      &kp MINUS       &kp EQL         &kp LS(P)      &kp P              &none
                                                           U_BTN3        &kp LG(TAB)  U_BTN2                       &kp BSPC     &none           &kp DEL
-            >;w
+            >;
         };
                                           
         fig_layer {
