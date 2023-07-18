@@ -7,10 +7,10 @@
 #include "../zmk-nodefree-config/helper.h"
 
 #define DEF 0
-#define NUM 1
-#define SYM 2
-#define FIG 3
-#define CMK 4
+#define ALT 1
+#define NUM 2
+#define SYM 3
+#define FIG 4
 
 #define U_RDO &kp LS(LG(Z))
 #define U_PST &kp LG(V)
@@ -273,17 +273,31 @@
 
         def_layer {
           // ---------------------------------------------------------------------------------------
-          // |  TAB |  Q  |  W  |  E  |  R  |  T  |           |  Y  |  U  |  I  |  O  |  P  | BKSP |
-          // | CTRL |  A  |  S  |  D  |  F  |  G  |           |  H  |  J  |  K  |  L  |  ;  |  '   |
-          // | SHFT |  Z  |  X  |  C  |  V  |  B  |           |  N  |  M  |  ,  |  .  |  /  | ESC  |
+          // |  TAB |  Q  |  W  |  F  |  P  |  G  |           |  J  |  L  |  U  |  Y  |  '  | BKSP |
+          // | CTRL |  A  |  R  |  S  |  T  |  D  |           |  H  |  N  |  E  |  I  |  O  |  '   |
+          // | SHFT |  Z  |  X  |  C  |  V  |  B  |           |  K  |  M  |  ,  |  .  |  /  |      |
           //                    | GUI |  L1 | SPC |           | ENT |  L2 | ALT |
             bindings = <
-                &kp TAB     &kp Q          &kp W          &kp E          &kp R          &kp T                   &kp Y       &kp U          &kp I           &kp O          &kp P             &bspc_del
-                &kp ESC     &gmt LSHFT A   &gmt LCTRL S   &gmt LALT D    &gmt LGUI F    &kp G                   &kp H       &gmt LGUI J    &gmt LALT K     &gmt LCTRL L   &gmt LSHFT SEMI   &kp SQT
-                &tog CMK    &kp Z          &kp X          &kp C          &kp V          &kp B                   &kp N       &kp M          &kp COMMA       &kp DOT        &kp SLASH         &none
+                &kp TAB     &kp Q          &kp W          &kp F          &kp P          &kp G                   &kp J       &kp L          &kp U           &kp Y          &kp SQT           &bspc_del
+                &kp ESC     &gmt LSHFT A   &gmt LCTRL R   &gmt LALT S    &gmt LGUI T    &kp D                   &kp H       &gmt LGUI N    &gmt LALT E     &gmt LCTRL I   &gmt LSHFT O      &kp SQT
+                &tog ALT    &kp Z          &kp X          &kp C          &kp V          &kp B                   &kp K       &kp M          &kp COMMA       &kp DOT        &kp SLASH         &none
                                                           &mkp MB1       &glt NUM SPACE &kp TAB                 &bspc_del   &glt SYM RET   &kp LG(SPACE)
             >;
         };
+
+        alt_layer {
+          // ---------------------------------------------------------------------------------------
+          // |  TAB |  Q  |  W  |  E  |  R  |  T  |           |  Y  |  U  |  I  |  O  |  P  | BKSP |
+          // | CTRL |  A  |  S  |  D  |  F  |  G  |           |  H  |  J  |  K  |  L  |  ;  |  '   |
+          // | SHFT |  Z  |  X  |  C  |  V  |  B  |           |  N  |  M  |  ,  |  .  |  /  |      |
+          //                    | GUI |  L1 | SPC |           | ENT |  L2 | ALT |
+             bindings = <
+                &kp TAB     &kp Q          &kp W          &kp E          &kp R          &kp T                   &kp Y       &kp U          &kp I           &kp O          &kp P             &bspc_del
+                &kp ESC     &gmt LSHFT A   &gmt LCTRL S   &gmt LALT D    &gmt LGUI F    &kp G                   &kp H       &gmt LGUI J    &gmt LALT K     &gmt LCTRL L   &gmt LSHFT SEMI   &kp SQT
+                &tog ALT    &kp Z          &kp X          &kp C          &kp V          &kp B                   &kp N       &kp M          &kp COMMA       &kp DOT        &kp SLASH         &none
+                                                          &mkp MB1       &glt NUM SPACE &kp TAB                 &bspc_del   &glt SYM RET   &kp LG(SPACE)
+            >;
+       };
 
         num_layer {
             bindings = <
@@ -312,14 +326,6 @@
             >;
         };
 
-        cmk_layer {
-            bindings = <
-                &kp TAB     &kp Q          &kp W          &kp F          &kp P          &kp G                   &kp J       &kp L          &kp U           &kp Y          &kp SQT           &bspc_del
-                &kp ESC     &gmt LSHFT A   &gmt LCTRL R   &gmt LALT S    &gmt LGUI T    &kp D                   &kp H       &gmt LGUI N    &gmt LALT E     &gmt LCTRL I   &gmt LSHFT O      &kp SQT
-                &tog CMK    &kp Z          &kp X          &kp C          &kp V          &kp B                   &kp K       &kp M          &kp COMMA       &kp DOT        &kp SLASH         &none
-                                                          &mkp MB1       &glt NUM SPACE &kp TAB                 &bspc_del   &glt SYM RET   &kp LG(SPACE)
-            >;
-        };
 
 
     };
