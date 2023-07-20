@@ -73,7 +73,7 @@
             //tap-ms = <30>;
             #binding-cells = <0>;
             // ij (=LY in qwerty)
-            bindings = <&macro_tap &kp L &kp Y>;
+            bindings = <&macro_tap &kp I &kp J>;
         };
 
         sch: sch {
@@ -83,7 +83,7 @@
             //tap-ms = <30>;
             #binding-cells = <0>;
             // sch (=DCH in qwerty)
-            bindings = <&macro_tap &kp D &kp C &kp H>;
+            bindings = <&macro_tap &kp S &kp C &kp H>;
         };
 
         // control + num
