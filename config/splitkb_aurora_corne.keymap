@@ -301,19 +301,19 @@
 
         num_layer {
             bindings = <
-                &mkp MB4    &bootloader    &none           &none         &none           &caps_word               &tog ALT      &kp NUM_7      &kp NUM_8       &kp NUM_9      &kp END           U_UND
+                &mkp MB4    &bootloader    &none           &none         &none           &caps_word               &kp LS(SEMI)  &kp NUM_7      &kp NUM_8       &kp NUM_9      &kp END           U_UND
                 &mkp MB5    &kp LSHFT      &kp LCTRL       &kp LALT      &kp LGUI        &key_repeat              &kp DOT       &kp NUM_4      &kp NUM_5       &kp NUM_6      &kp RIGHT         U_RDO
                 &mkp MB3    U_UND          U_CUT           U_CPY         U_PST           U_RDO                    &kp COMMA     &kp NUM_1      &kp NUM_2       &kp NUM_3      &kp RET           &none
-                                                           &none         &glt NUM SPACE  &none                    &kp SPACE     &kp NUM_0      &kp DEL
+                                                           &none         &glt NUM SPACE  &none                    &kp SPACE     &kp NUM_0      &bspc_del
             >;
         };
 
         sym_layer {
             bindings = <
                 U_WH_U      &kp EXCL       &kp AT          &kp HASH      &kp DLLR        &kp PRCT                 &kp CRRT      &kp AMPS        &kp ASTRK      U_WH_L         U_WH_R             &kp PG_UP
-                U_WH_D      &kp LPAR       &kp LBKT        &kp RBKT      &kp RPAR        &kp LS(LA(NUM_2))        &kp HOME      &kp LEFT        &kp DOWN       &kp UP         &kp RIGHT          &kp PG_DN
+                U_WH_D      &kp LPAR       &kp RPAR        &kp LBKT      &kp RBKT        &kp LS(LA(NUM_2))        &kp HOME      &kp LEFT        &kp DOWN       &kp UP         &kp RIGHT          &kp PG_DN
                 &none       &kp LT         &kp GRAVE       &kp BSLH      &kp GT          &kp LA(NUM_3)            &kp END       &kp MINUS       &kp EQL        &kp LS(P)      &kp P              &none
-                                                           &kp LC(TAB)   &kp SPACE      &kp LG(TAB)              &none         &none           &kp DEL
+                                                           &kp LC(TAB)   &kp SPACE       &kp LG(TAB)              &none         &none           &kp DEL
             >;
         };
                                           
