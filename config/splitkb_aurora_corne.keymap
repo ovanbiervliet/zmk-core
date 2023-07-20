@@ -313,7 +313,7 @@
                 U_WH_U      &kp EXCL       &kp AT          &kp HASH      &kp DLLR        &kp PRCT                 &kp CRRT      &kp AMPS        &kp ASTRK      U_WH_L         U_WH_R             &kp PG_UP
                 U_WH_D      &kp LPAR       &kp LBKT        &kp RBKT      &kp RPAR        &kp LS(LA(NUM_2))        &kp HOME      &kp LEFT        &kp DOWN       &kp UP         &kp RIGHT          &kp PG_DN
                 &none       &kp LT         &kp GRAVE       &kp BSLH      &kp GT          &kp LA(NUM_3)            &kp END       &kp MINUS       &kp EQL        &kp LS(P)      &kp P              &none
-                                                           &kpn LC(TAB)   &kp SPACE      &kp LG(TAB)              &none         &none           &kp DEL
+                                                           &kp LC(TAB)   &kp SPACE      &kp LG(TAB)              &none         &none           &kp DEL
             >;
         };
                                           
