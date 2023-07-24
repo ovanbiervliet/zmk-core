@@ -301,8 +301,8 @@
 
         num_layer {
             bindings = <
-                &mkp MB4    &bootloader    &none           &none         &none           &caps_word               &kp LS(SEMI)  &kp NUM_7      &kp NUM_8       &kp NUM_9      &kp END           U_UND
-                &mkp MB5    &kp LSHFT      &kp LCTRL       &kp LALT      &kp LGUI        &key_repeat              &kp DOT       &kp NUM_4      &kp NUM_5       &kp NUM_6      &kp RIGHT         U_RDO
+                &mkp MB4    &bootloader    &none           &none         &none           &caps_word               U_UND         &kp NUM_7      &kp NUM_8       &kp NUM_9      &kp LS(SEMI)      U_RDO
+                &mkp MB5    &kp LSHFT      &kp LCTRL       &kp LALT      &kp LGUI        &key_repeat              &kp DOT       &kp NUM_4      &kp NUM_5       &kp NUM_6      &kp RIGHT         &kp SQT
                 &mkp MB3    U_UND          U_CUT           U_CPY         U_PST           U_RDO                    &kp COMMA     &kp NUM_1      &kp NUM_2       &kp NUM_3      &kp RET           &none
                                                            &none         &glt NUM SPACE  &none                    &kp SPACE     &kp NUM_0      &bspc_del
             >;
@@ -325,8 +325,6 @@
                                                            &none        &none            &none                        &none         &kp NUM_0       &none
             >;
         };
-
-
 
     };
 };
