@@ -281,7 +281,7 @@
                  &kp TAB     &kp Q          &kp W          &kp F           &kp P         &kp G                    &kp J         &kp L          &kp U           &kp Y          &kp SEMI          &bspc_del
                  &kp ESC     &gmt LSHFT A   &gmt LCTRL R   &gmt LALT S     &gmt LGUI T   &kp D                    &kp H         &gmt LGUI N    &gmt LALT E     &gmt LCTRL I   &gmt LSHFT O      &kp SQT
                  &kp LGUI    &kp Z          &kp X          &kp C           &kp V         &kp B                    &kp K         &kp M          &kp COMMA       &kp DOT        &kp SLASH         &none
-                                                           &glt NUM TAB    &kp SPACE     &mkp MB1                 &kp LG(SPACE) &glt SYM RET   &bspc_del
+                                                           &mkp MB1        &glt NUM SPACE &kp TAB                 &kp LG(SPACE) &glt SYM RET   &bspc_del
              >;
       };
 
@@ -295,7 +295,7 @@
                 &kp TAB     &kp Q          &kp W           &kp E           &kp R         &kp T                    &kp Y         &kp U          &kp I           &kp O          &kp P             &bspc_del
                 &kp ESC     &gmt LSHFT A   &gmt LCTRL S    &gmt LALT D     &gmt LGUI F   &kp G                    &kp H         &gmt LGUI J    &gmt LALT K     &gmt LCTRL L   &gmt LSHFT SEMI   &kp SQT
                 &kp LGUI    &kp Z          &kp X           &kp C           &kp V         &kp B                    &kp N         &kp M          &kp COMMA       &kp DOT        &kp SLASH         &none
-                                                           &glt NUM TAB    &kp SPACE     &mkp MB1                 &kp LG(SPACE) &glt SYM RET   &bspc_del
+                                                           &mkp MB1        &glt NUM SPACE &kp TAB                 &kp LG(SPACE) &glt SYM RET   &bspc_del
             >;
         };
 
@@ -303,8 +303,8 @@
             bindings = <
                 &mkp MB4    &bootloader    &none           &none           &none         &caps_word               U_RDO         &kp NUM_7      &kp NUM_8       &kp NUM_9      &kp LS(SEMI)      U_UND
                 &mkp MB5    &kp LSHFT      &kp LCTRL       &kp LALT        &kp LGUI      &key_repeat              &kp DOT       &kp NUM_4      &kp NUM_5       &kp NUM_6      &kp RIGHT         &kp SQT
-                &none       U_UND          U_CUT           U_CPY           U_PST         U_RDO                    &kp COMMA     &kp NUM_1      &kp NUM_2       &kp NUM_3      &kp RET           &none
-                                                           &glt NUM TAB    &none         &none                    &kp SPACE     &kp NUM_0      &bspc_del
+                &mkp MB3    U_UND          U_CUT           U_CPY           U_PST         U_RDO                    &kp COMMA     &kp NUM_1      &kp NUM_2       &kp NUM_3      &kp RET           &none
+                                                           &none           &none         &none                    &kp SPACE     &kp NUM_0      &bspc_del
             >;
         };
 
