@@ -271,7 +271,6 @@
 };
 
 
-/ {
     chosen { zmk,matrix_transform = &layout_grid_transform; };
     keymap {
         compatible = "zmk,keymap";
