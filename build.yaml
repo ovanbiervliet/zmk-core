@@ -27,13 +27,13 @@
 targets:
   - name: corne
     platform: zephyr
-  - board: nice_nano_v2
-    shield: splitkb_aurora_corne_left
-  - board: nice_nano_v2
-    shield: splitkb_aurora_corne_right
-    app: zmk
-    build_dir: build/corne
-    artifacts_dir: artifacts/corne
+      - board: nice_nano_v2
+        shield: splitkb_aurora_corne_left
+      - board: nice_nano_v2
+        shield: splitkb_aurora_corne_right
+      app: zmk
+      build_dir: build/corne
+      artifacts_dir: artifacts/corne
 
   - name: preonic
     platform: zephyr
