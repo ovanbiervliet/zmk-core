@@ -17,27 +17,28 @@
 #kconfig: '["CONFIG_ZMK_MOUSE=y", "CONFIG_ZMK_SLEEP=y", "CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=3600000", "CONFIG_BT_CTLR_TX_PWR_PLUS_8=y", "CONFIG_ZMK_KEYBOARD_NAME=\"Corne Nano\""]'
 #branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
 
-#include:
-#  - board: nice_nano_v2
-#    shield: splitkb_aurora_corne_left
-#  - board: nice_nano_v2
-#    shield: splitkb_aurora_corne_right
+include:
+  - board: nice_nano_v2
+    shield: splitkb_aurora_corne_left
+  - board: nice_nano_v2
+    shield: splitkb_aurora_corne_right
+  - board: preonic_rev3
+
+
+#targets:
+#  - name: corne
+#    platform: zephyr
+#      - board: nice_nano_v2
+#        shield: splitkb_aurora_corne_left
+#      - board: nice_nano_v2
+#        shield: splitkb_aurora_corne_right
+#      app: zmk
+#      build_dir: build/corne
+#      artifacts_dir: artifacts/corne
 #
-
-targets:
-  - name: corne
-    platform: zephyr
-      - board: nice_nano_v2
-        shield: splitkb_aurora_corne_left
-      - board: nice_nano_v2
-        shield: splitkb_aurora_corne_right
-      app: zmk
-      build_dir: build/corne
-      artifacts_dir: artifacts/corne
-
-  - name: preonic
-    platform: zephyr
-    board: preonic_rev3
-    app: zmk
-    build_dir: build/preonic
-    artifacts_dir: artifacts/preonic
+#  - name: preonic
+#    platform: zephyr
+#    board: preonic_rev3
+#    app: zmk
+#    build_dir: build/preonic
+#    artifacts_dir: artifacts/preonic
