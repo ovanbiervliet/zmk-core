@@ -308,13 +308,13 @@
                 &kp TAB     &kp Q          &kp W           &kp E           &kp R         &kp T                    &kp Y         &kp U          &kp I           &kp O          &kp P             &bspc_del
                 &kp ESC     &gmt LSHFT A   &gmt LCTRL S    &gmt LALT D     &gmt LGUI F   &kp G                    &kp H         &gmt LGUI J    &gmt LALT K     &gmt LCTRL L   &gmt LSHFT SEMI   &kp SQT
                 &kp LGUI    &kp Z          &kp X           &kp C           &kp V         &kp B                    &kp N         &kp M          &kp COMMA       &kp DOT        &kp SLASH         &none
-                                                           &mkp MB1        &glt NUM SPACE &kp TAB                 &bspc_del     &glt SYM RET   &kp LG(SPACE)
+                                                           &mkp MB1        &glt NUM SPACE &kp SPACE               &bspc_del     &glt SYM RET   &kp LG(SPACE)
             >;
         };
 
         num_layer {
             bindings = <
-                &mkp MB4    &bootloader    &none           &none           &none         &caps_word               U_RDO         &kp NUM_7      &kp NUM_8       &kp NUM_9      &kp LS(SEMI)      U_UND
+                &mkp MB4    &bootloader    &reset          &u_bt_sel_0     &u_bt_sel_1   &caps_word               U_RDO         &kp NUM_7      &kp NUM_8       &kp NUM_9      &kp LS(SEMI)      U_UND
                 &mkp MB5    &kp LSHFT      &kp LCTRL       &kp LALT        &kp LGUI      &key_repeat              U_UND         &kp NUM_4      &kp NUM_5       &kp NUM_6      &kp RIGHT         &kp SQT
                 &mkp MB3    U_UND          U_CUT           &kp COMMA       &kp DOT       U_RDO                    &kp MINUS     &kp NUM_1      &kp NUM_2       &kp NUM_3      &kp RET           &none
                                                            &none           &none         &none                    &bspc_del     &kp NUM_0      &kp SPACE
