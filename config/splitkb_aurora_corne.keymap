@@ -289,7 +289,7 @@
            // |  TAB |  Q  |  W  |  F  |  P  |  G  |           |  J  |  L  |  U  |  Y  |  '  | BKSP |
            // | CTRL |  A  |  R  |  S  |  T  |  D  |           |  H  |  N  |  E  |  I  |  O  |  '   |
            // | SHFT |  Z  |  X  |  C  |  V  |  B  |           |  K  |  M  |  ,  |  .  |  /  |      |
-           //                    | GUI |  L1 | SPC |           | ENT |  L2 | ALT |
+           //                    | GUI |  L1 | SPC |           | ENT |  L2 | ALT |n
              bindings = <
                  &kp TAB     &kp Q          &kp W          &kp F           &kp P         &kp G                    &kp J         &kp L          &kp U           &kp Y          &kp SEMI          &bspc_del
                  &kp ESC     &gmt LSHFT A   &gmt LCTRL R   &gmt LALT S     &gmt LGUI T   &kp D                    &kp H         &gmt LGUI N    &gmt LALT E     &gmt LCTRL I   &gmt LSHFT O      &kp SQT
@@ -314,8 +314,8 @@
 
         num_layer {
             bindings = <
-                &mkp MB4    &bootloader    &reset          &u_bt_sel_0     &u_bt_sel_1   &caps_word               U_RDO         &kp NUM_7      &kp NUM_8       &kp NUM_9      &kp LS(SEMI)      U_UND
-                &mkp MB5    &kp LSHFT      &kp LCTRL       &kp LALT        &kp LGUI      &key_repeat              U_UND         &kp NUM_4      &kp NUM_5       &kp NUM_6      &kp RIGHT         &kp SQT
+                &mkp MB4    &bootloader    &sys_reset      &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1             U_RDO         &kp NUM_7      &kp NUM_8       &kp NUM_9      &kp LS(SEMI)      &sys_reset
+                &mkp MB5    &kp LSHFT      &kp LCTRL       &kp LALT        &kp LGUI      &caps_word               U_UND         &kp NUM_4      &kp NUM_5       &kp NUM_6      &kp RIGHT         &kp SQT
                 &mkp MB3    U_UND          U_CUT           &kp COMMA       &kp DOT       U_RDO                    &kp MINUS     &kp NUM_1      &kp NUM_2       &kp NUM_3      &kp RET           &none
                                                            &none           &none         &none                    &bspc_del     &kp NUM_0      &kp SPACE
             >;
