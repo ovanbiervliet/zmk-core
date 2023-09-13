@@ -316,8 +316,8 @@
 
         num_layer {
             bindings = <
-                &mkp MB4    &bootloader    &sys_reset      &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1             U_RDO         &kp NUM_7      &kp NUM_8       &kp NUM_9      &kp LS(SEMI)      &bootloade
-                &mkp MB5    &kp LSHFT      &kp LCTRL       &kp LALT        &kp LGUI      &caps_word               U_UND         &kp NUM_4      &kp NUM_5       &kp NUM_6      &kp RIGHT         &kp SQT
+                &mkp MB4    &bt BT_SEL 0   &bt BT_SEL 1    &bt BT_CLR      &caps_word    &sys_reset               &sys_reset    &kp NUM_7      &kp NUM_8       &kp NUM_9      &kp LS(SEMI)      U_UND
+                &mkp MB5    &kp LSHFT      &kp LCTRL       &kp LALT        &kp LGUI      &bootloader              &bootloader   &kp NUM_4      &kp NUM_5       &kp NUM_6      &kp RIGHT         &kp SQT
                 &mkp MB3    U_UND          U_CUT           &kp COMMA       &kp DOT       U_RDO                    &kp MINUS     &kp NUM_1      &kp NUM_2       &kp NUM_3      &kp RET           &none
                                                            &to DEF         &none         &to ALT                  &bspc_del     &kp NUM_0      &kp SPACE
             >;
