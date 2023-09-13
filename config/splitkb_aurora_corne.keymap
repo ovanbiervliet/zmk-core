@@ -73,7 +73,8 @@
             //tap-ms = <30>;
             #binding-cells = <0>;
             // ij (=LY in qwerty)
-            bindings = <&macro_tap &kp I &kp J>;
+            //bindings = <&macro_tap &kp I &kp J>;
+            bindings = <&macro_tap &kp L &kp Y>;
         };
 
         sch: sch {
@@ -83,6 +84,7 @@
             //tap-ms = <30>;
             #binding-cells = <0>;
             // sch (=DCH in qwerty)
+            //bindings = <&macro_tap &kp S &kp C &kp H>;
             bindings = <&macro_tap &kp S &kp C &kp H>;
         };
 
@@ -314,7 +316,7 @@
 
         num_layer {
             bindings = <
-                &mkp MB4    &bootloader    &sys_reset      &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1             U_RDO         &kp NUM_7      &kp NUM_8       &kp NUM_9      &kp LS(SEMI)      &sys_reset
+                &mkp MB4    &bootloader    &sys_reset      &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1             U_RDO         &kp NUM_7      &kp NUM_8       &kp NUM_9      &kp LS(SEMI)      &bootloade
                 &mkp MB5    &kp LSHFT      &kp LCTRL       &kp LALT        &kp LGUI      &caps_word               U_UND         &kp NUM_4      &kp NUM_5       &kp NUM_6      &kp RIGHT         &kp SQT
                 &mkp MB3    U_UND          U_CUT           &kp COMMA       &kp DOT       U_RDO                    &kp MINUS     &kp NUM_1      &kp NUM_2       &kp NUM_3      &kp RET           &none
                                                            &to DEF         &none         &to ALT                  &bspc_del     &kp NUM_0      &kp SPACE
