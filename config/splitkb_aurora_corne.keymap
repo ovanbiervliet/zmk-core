@@ -171,7 +171,7 @@
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
             bindings = <&mo>, <&sl>;
-        }
+        };
 
         bspc_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
