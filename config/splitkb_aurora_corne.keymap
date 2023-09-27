@@ -302,10 +302,10 @@
           // | SHFT |  Z  |  X  |  C  |  V  |  B  |           |  N  |  M  |  ,  |  .  |  /  |      |
           //                    | GUI |  L1 | SPC |           | ENT |  L2 | ALT |
              bindings = <
-                &kp TAB     &kp Q          &kp W           &kp E           &kp R         &kp T                    &kp Y         &kp U          &kp I           &kp O          &kp P             &bspc_del
-                &kp ESC     &gmt LSHFT A   &gmt LCTRL S    &gmt LALT D     &gmt LGUI F   &kp G                    &kp H         &gmt LGUI J    &gmt LALT K     &gmt LCTRL L   &gmt LSHFT SEMI   &kp SQT
-                &tog FIG    &kp Z          &kp X           &kp C           &kp V         &kp B                    &kp N         &kp M          &kp COMMA       &kp DOT        &kp SLASH         &none
-                                                           &mo_sl NUM NUM  &mkp MB1      &kp SPACE                &bspc_del     &glt SYM RET   &kp LG(SPACE)
+                &kp TAB     &kp Q          &kp W           &kp E           &kp R           &kp T                  &kp Y         &kp U          &kp I           &kp O          &kp P             &bspc_del
+                &kp ESC     &gmt LSHFT A   &gmt LCTRL S    &gmt LALT D     &gmt LGUI F     &kp G                  &kp H         &gmt LGUI J    &gmt LALT K     &gmt LCTRL L   &gmt LSHFT SEMI   &kp SQT
+                &tog FIG    &kp Z          &kp X           &kp C           &kp V           &kp B                  &kp N         &kp M          &kp COMMA       &kp DOT        &kp SLASH         &none
+                                                           &mkp MB1        &mo_sl NUM NUM  &kp SPACE              &kp SPACE     &glt SYM RET   &kp LG(SPACE)
             >;
         };
 
@@ -316,37 +316,37 @@
            // | SHFT |  Z  |  X  |  C  |  V  |  B  |           |  K  |  M  |  ,  |  .  |  /  |      |
            //                    | GUI |  L1 | SPC |           | ENT |  L2 | ALT |n
              bindings = <
-                 &kp TAB     &kp Q          &kp W          &kp F           &kp P         &kp G                    &kp J         &kp L          &kp U           &kp Y          &kp SEMI          &bspc_del
-                 &kp ESC     &gmt LSHFT A   &gmt LCTRL R   &gmt LALT S     &gmt LGUI T   &kp D                    &kp H         &gmt LGUI N    &gmt LALT E     &gmt LCTRL I   &gmt LSHFT O      &kp SQT
-                 &tog FIG    &kp Z          &kp X          &kp C           &kp V         &kp B                    &kp K         &kp M          &kp COMMA       &kp DOT        &kp SLASH         &none
-                                                           &mo_sl NUM NUM  &mkp MB1      &kp SPACE                &bspc_del     &glt SYM RET   &kp LG(SPACE)
+                 &kp TAB     &kp Q          &kp W          &kp F           &kp P           &kp G                  &kp J         &kp L          &kp U           &kp Y          &kp SEMI          &bspc_del
+                 &kp ESC     &gmt LSHFT A   &gmt LCTRL R   &gmt LALT S     &gmt LGUI T     &kp D                  &kp H         &gmt LGUI N    &gmt LALT E     &gmt LCTRL I   &gmt LSHFT O      &kp SQT
+                 &tog FIG    &kp Z          &kp X          &kp C           &kp V           &kp B                  &kp K         &kp M          &kp COMMA       &kp DOT        &kp SLASH         &none
+                                                           &mkp MB1        &mo_sl NUM NUM  &kp SPACE              &kp SPACE     &glt SYM RET   &kp LG(SPACE)
              >;
       };
 
         num_layer {
             bindings = <
-                &mkp MB4    &bt BT_SEL 0   &bt BT_SEL 1    &bt BT_CLR      &caps_word    &sys_reset               &sys_reset    &kp NUM_7      &kp NUM_8       &kp NUM_9      &kp LS(SEMI)      U_UND
-                &mkp MB5    &kp LSHFT      &kp LCTRL       &kp LALT        &kp LGUI      &bootloader              &bootloader   &kp NUM_4      &kp NUM_5       &kp NUM_6      &kp RIGHT         &kp SQT
-                &mkp MB3    U_UND          U_CUT           &kp COMMA       &kp DOT       U_RDO                    &kp MINUS     &kp NUM_1      &kp NUM_2       &kp NUM_3      &kp RET           &none
-                                                           &none           &none         &none                    &bspc_del     &kp NUM_0      &kp SPACE
+                &mkp MB4    &bt BT_SEL 0   &bt BT_SEL 1    &bt BT_CLR      &caps_word      &sys_reset             &sys_reset    &kp NUM_7      &kp NUM_8       &kp NUM_9      &kp LS(P)         U_UND
+                &mkp MB5    &kp LSHFT      &kp LCTRL       &kp LALT        &kp LGUI        &bootloader            &bootloader   &kp NUM_4      &kp NUM_5       &kp NUM_6      &kp RIGHT         &kp SQT
+                &mkp MB3    U_UND          U_CUT           &kp COMMA       &kp DOT         U_RDO                  &kp MINUS     &kp NUM_1      &kp NUM_2       &kp NUM_3      &kp RET           &none
+                                                           &none           &none           &none                  &kp SPACE     &kp NUM_0      &kp SPACE
             >;
         };
 
         sym_layer {
             bindings = <
-                U_WH_U      &kp EXCL       &kp AT          &kp HASH        &kp DLLR      &kp PRCT                 &kp CRRT      &kp AMPS        &kp ASTRK      U_WH_L         U_WH_R             &kp PG_UP
-                U_WH_D      &kp LPAR       &kp LBKT        &kp RBKT        &kp RPAR      &kp LS(LA(NUM_2))        &kp HOME      &kp LEFT        &kp DOWN       &kp UP         &kp RIGHT          &kp PG_DN
-                &mkp MB3    &kp LT         &kp GRAVE       &kp BSLH        &kp GT        &kp LA(NUM_3)            &kp END       &kp MINUS       &kp EQL        &kp LS(P)      &kp P              &none
-                                                           &kp LC(TAB)     &kp SPACE     &kp LG(TAB)              &to DEF       &none           &to ALT
+                U_WH_U      &kp EXCL       &kp AT          &kp HASH        &kp DLLR        &kp PRCT               &kp CRRT      &kp AMPS        &kp ASTRK      U_WH_L         U_WH_R             &kp PG_UP
+                U_WH_D      &kp LPAR       &kp LBKT        &kp RBKT        &kp RPAR        &kp LS(LA(NUM_2))      &kp HOME      &kp LEFT        &kp DOWN       &kp UP         &kp RIGHT          &kp PG_DN
+                &mkp MB3    &kp LT         &kp GRAVE       &kp BSLH        &kp GT          &kp LA(NUM_3)          &kp END       &kp MINUS       &kp EQL        &kp LS(P)      &kp P              &none
+                                                           &kp LC(TAB)     &kp TAB         &kp LG(TAB)            &to DEF       &none           &to ALT
             >;
         };
                                           
         fig_layer {
             bindings = <
-                &mkp MB4    U_WH_L         U_WH_D          U_WH_U          U_WH_R        &none                    &none         U_MS_L          U_MS_D         U_MS_U        U_MS_R            &kp LG(NUM_0)
-                &mkp MB5    &kp LSHFT      &kp LCTRL       &kp LALT        &kp LGUI      &none                    &kp COMMA     &kp LEFT        &kp DOWN       &kp UP        &kp RIGHT         U_BTN1
-                &tog FIG    &none          &none           &none           &none         &none                    &kp DOT       &kp RET         &kp ESC        &kp LG(BSLH)  &kp LG(SLASH)     &none
-                                                           &mkp MB2        &mkp MB1      &kp SPACE                &none         &kp NUM_0       &none
+                &mkp MB4    U_WH_L         U_WH_D          U_WH_U          U_WH_R          &none                  &none         U_MS_L          U_MS_D         U_MS_U        U_MS_R            &kp LG(NUM_0)
+                &mkp MB5    &kp LSHFT      &kp LCTRL       &kp LALT        &kp LGUI        &none                  &kp COMMA     &kp LEFT        &kp DOWN       &kp UP        &kp RIGHT         U_BTN1
+                &tog FIG    &none          &none           &none           &none           &none                  &kp DOT       &kp RET         &kp ESC        &kp LG(BSLH)  &kp LG(SLASH)     &none
+                                                           &mkp MB1        &mkp MB2        &kp SPACE              &none         &kp NUM_0       &none
             >;
         };
 
